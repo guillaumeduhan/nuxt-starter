@@ -1,8 +1,8 @@
-# NuxtJS starter
+# NuxtJS Starter for your projects.
 
 🦾 Starter with NuxtJS\
-📦 Nuxt, Sass/Scss, ESLint
-⌚ Last update: 3/17/2022
+📦 Nuxt, Sass/Scss, ESLint\
+⌚ Last update: 3/17/2022\
 
 ![logo](https://repository-images.githubusercontent.com/471003708/fb6f3312-3973-4f85-b973-a51ac3f680d6)
 
