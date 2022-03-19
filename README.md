@@ -1,8 +1,8 @@
-# NuxtJS Starter for your projects.
+# NuxtJS / Hasura starter for your projects.
 
-🦾 Starter with NuxtJS\
+🦾 Starter with NuxtJS & Hasura
 📦 Nuxt, Sass/Scss, ESLint\
-⌚ Last update: 3/17/2022\
+⌚ Last update: 3/18/2022\
 
 ![logo](https://repository-images.githubusercontent.com/471003708/fb6f3312-3973-4f85-b973-a51ac3f680d6)
 
@@ -14,6 +14,8 @@ Clone project and enter in folder:
 cd nuxt-starter
 ```
 
+Add an .env file with BASE_URL && HASURA_ACCESS_JWT.
+
 Run yarn:
 
 ```
@@ -23,12 +25,13 @@ yarn
 Enjoy:
 
 ```
-yarn serve
+yarn dev
 ```
 
 ## Built With
 
 - [Nuxt](https://nuxtjs.org/) - The Intuitive Framework.
+- [Hasura](https://hasura.io/) - Instant GraphQL on all your data.
 
 ## Versioning
 

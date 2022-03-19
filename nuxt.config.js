@@ -22,6 +22,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/api'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -36,8 +37,35 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/apollo'
   ],
+
+  apollo: {
+    tokenName: 'nuxt-apollo', // specify token name
+    cookieAttributes: {
+      expires: 7 // optional, default: 7 (days)
+    },
+    defaultOptions: {
+      $query: {
+        loadingKey: 'loading',
+        fetchPolicy: 'cache-and-network'
+      }
+    },
+    includeNodeModules: true,
+    watchLoading: '@/apollo/loadingHandler.js',
+    errorHandler: '@/apollo/errorHandler.js',
+    clientConfigs: {
+      default: {
+        httpEndpoint: process.env.BASE_URL,
+        httpLinkOptions: {
+          headers: {
+            'x-hasura-admin-secret': process.env.HASURA_ACCESS_JWT
+          }
+        }
+      }
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

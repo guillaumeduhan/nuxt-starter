@@ -15,5 +15,9 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
-}
+  rules: {
+    quotes: ['error', 'single'],
+    indent: ['error', 2],
+    'no-multi-spaces': ['error']
+  }
+};
