@@ -1,3 +1,5 @@
+import { InMemoryCache } from 'apollo-cache-inmemory'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -62,7 +64,8 @@ export default {
           headers: {
             'x-hasura-admin-secret': process.env.HASURA_ACCESS_JWT
           }
-        }
+        },
+        cache: new InMemoryCache()
       }
     }
   },
