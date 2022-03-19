@@ -4,7 +4,7 @@
 📦 Nuxt, Sass/Scss, ESLint\
 ⌚ Last update: 3/18/2022\
 
-![logo](https://repository-images.githubusercontent.com/471003708/fb6f3312-3973-4f85-b973-a51ac3f680d6)
+![logo](https://repository-images.githubusercontent.com/471003708/97a9b6cf-401b-464e-9a0e-afcd5a5b3bc3)
 
 ## Getting Started
 
